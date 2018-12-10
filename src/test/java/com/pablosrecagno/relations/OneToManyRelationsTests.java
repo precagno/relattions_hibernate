@@ -1,6 +1,5 @@
 package com.pablosrecagno.relations;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,8 +50,6 @@ public class OneToManyRelationsTests {
 		cust1.addPhoneNumber(ph2);
 		cust2.addPhoneNumber(ph3);
 		cust2.addPhoneNumber(ph4);
-		
-		
 		
 		this.repository.save(cust1);
 		this.repository.save(cust2);
